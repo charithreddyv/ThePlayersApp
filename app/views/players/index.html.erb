@@ -1,0 +1,27 @@
+<h1>we have <%= @Players.count %> players</h1>
+<table>
+	<thead>
+		<tr>
+			<td><b>First Name</b></td>
+			<td><b>Last Name</b></td>
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @Players.each do |player| %>
+		<tr>
+			<td><%= player.first_name %></td>
+			<td><%= player.last_name %> </td>
+
+
+			<td><a href="/players/<%= player.id %>">show  profile</a>|
+            <a href="/players/<%= player.id %>/edit"> Edit profile</a>|
+            <a href="/players/<%= player.id %>" data-method=delete data-confirm="Are you Sure"> Delete Profile</a>
+			</td>
+		
+
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+<a href="/players/new"> <b> Add new </b></a>
