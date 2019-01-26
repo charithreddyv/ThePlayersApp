@@ -8,12 +8,15 @@ This is a simple rails app that allows to create players , delete players , edit
 1. navigate to the diectory
 
 ``` cd ThePlayersApp ```
+
 2. install all the gems needed
 
 ``` bundle install ```
+
 3. migrate the database
 
 ``` rake db:migrate ```
+
 4.run the server 
 
 ``` rails s ```
