@@ -33,7 +33,7 @@ This is a simple rails app that allows to create players , delete players , edit
 
 (or)
 
-``` rake routes ```
+``` rake routes ``` /
 ``` bundle exec rake routes ```
 
 
